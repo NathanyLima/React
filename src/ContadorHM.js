@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import manImage from './img/perfil2.png'; // Caminho relativo
+import womanImage from './img/perfil.png'; // Caminho relativo
 
 const App = () => {
   const [totalCount, setTotalCount] = useState(0);
@@ -94,7 +96,7 @@ const App = () => {
             count={manCount} 
             increment={incrementMan} 
             decrement={decrementMan} 
-            imageSrc="/img/perfil2.png"  // Caminho relativo
+            imageSrc={manImage}  // Usando a imagem importada
           />
           
           {/* Seção de mulheres */}
@@ -103,7 +105,7 @@ const App = () => {
             count={womanCount} 
             increment={incrementWoman} 
             decrement={decrementWoman} 
-            imageSrc="/img/perfil.png"  // Caminho relativo
+            imageSrc={womanImage}  // Usando a imagem importada
           />
         </div>
       </div>
