@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
- 
+
 function Letreiro() {
     const texto = "Venha estudar na FATEC";
     const [displayedText, setDisplayedText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
     const [index, setIndex] = useState(0);
- 
+
     useEffect(() => {
         const intervalo = setInterval(() => {
             if (isDeleting) {
@@ -20,17 +20,17 @@ function Letreiro() {
                     setIsDeleting(true);
                 }
             }
- 
+
             setIndex((prev) => (isDeleting ? prev : prev + 1) % texto.length);
         }, isDeleting ? 150 : 200);
- 
+
         return () => clearInterval(intervalo);
     }, [index, displayedText, isDeleting]);
- 
+
     return (
         <>
-             <h1>Meu Letreiro</h1>
- 
+             <h1>Meu Letreiro</h1> 
+
             <h1 style={{
                 fontSize: '2em',
                 whiteSpace: 'nowrap',
@@ -43,7 +43,5 @@ function Letreiro() {
         </>
     );
 }
- 
+
 export default Letreiro;
- 
- 

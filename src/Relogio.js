@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
- 
+
 function Relogio() {
     const [horarioAtual, setHorarioAtual] = useState("");
- 
+
     useEffect(() => {
         const atualizarRelogio = () => {
             const data = new Date();
@@ -11,13 +11,13 @@ function Relogio() {
             const segundos = String(data.getSeconds()).padStart(2, '0');
             setHorarioAtual(`${horas}:${minutos}:${segundos}`);
         };
- 
-        atualizarRelogio();
-        const intervalo = setInterval(atualizarRelogio, 1000);
- 
-        return () => clearInterval(intervalo);
+
+        atualizarRelogio(); 
+        const intervalo = setInterval(atualizarRelogio, 1000); 
+
+        return () => clearInterval(intervalo); 
     }, []);
- 
+
     return (
       <>
         <h1>Meu Relógio</h1>
@@ -25,7 +25,5 @@ function Relogio() {
         </>
     );
 }
- 
+
 export default Relogio;
- 
- 
