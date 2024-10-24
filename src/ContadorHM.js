@@ -5,10 +5,6 @@ const App = () => {
   const [manCount, setManCount] = useState(0);
   const [womanCount, setWomanCount] = useState(0);
 
-  const updateDisplay = () => {
-    
-  };
-
   const resetCounters = () => {
     setTotalCount(0);
     setManCount(0);
@@ -98,7 +94,7 @@ const App = () => {
             count={manCount} 
             increment={incrementMan} 
             decrement={decrementMan} 
-            imageSrc="../Atividade6/perfil2.png" 
+            imageSrc="/img/perfil2.png"  // Caminho relativo
           />
           
           {/* Seção de mulheres */}
@@ -107,7 +103,7 @@ const App = () => {
             count={womanCount} 
             increment={incrementWoman} 
             decrement={decrementWoman} 
-            imageSrc="../Atividade6/perfil.png" 
+            imageSrc="/img/perfil.png"  // Caminho relativo
           />
         </div>
       </div>
