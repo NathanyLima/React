@@ -6,7 +6,7 @@ const Atv03 = () => {
     return (
         <div>
             <h1> Atividade 03</h1>
-            <Atividade3 />  
+            <./Atividade3 />  
             <Link to="/">Voltar para a Home</Link>
         </div>
     );
