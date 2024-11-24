@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import atividade3 from "./atividade3"; 
+import Atividade3 from "./Atividade3"; 
 
 const Atv03 = () => {
     return (
