@@ -8,7 +8,7 @@ import TeaSet from "./cont/TeaSet";
 import TodoList from "./cont/TodoList";
 import "./Atv03.scss";
 
-const Atv03Component = () => {
+const Atv03 = () => {
   return (
     <div className="body">
       <div className="component">
@@ -43,4 +43,4 @@ const Atv03Component = () => {
   );
 };
 
-export default Atv03Component;
+export default Atv03;
