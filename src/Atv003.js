@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Atv03 from "./Componentes/Atv03"; 
+import Atv03 from "./Atv03"; 
 
 const Atv03 = () => {
   return (
