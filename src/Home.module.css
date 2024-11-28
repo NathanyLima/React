@@ -9,7 +9,7 @@
 
 .homeTitle {
     text-align: center;
-    color: rgb(227, 14, 206);
+    color: rgb(227, 14, 14);
     margin-bottom: 20px;
 }
 
@@ -22,7 +22,7 @@
     padding: 0;
     margin: 0;
     display: inline-block;
-    background-color: #e590d9;
+    background-color: #881919;
     border-radius: 8px;
 }
 
@@ -39,6 +39,6 @@
 }
 
 .homeLink:hover {
-    background-color: #e4aae3;
+    background-color: #c05757;
     border-radius: 8px;
 }
