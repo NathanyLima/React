@@ -5,7 +5,7 @@ import styles from './Home.module.css';
 const Home = () => {
     return (
         <div className={styles.homeContainer}>
-            <h1 className={styles.homeTitle}>Página Inicial</h1>
+            <h1 className={styles.homeTitle}>Atividades de React</h1>
             <nav className={styles.homeNav}>
                 <ul className={styles.homeList}>
                     <li className={styles.homeListItem}>
