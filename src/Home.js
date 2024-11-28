@@ -1,22 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from './Home.module.css'; 
 
 const Home = () => {
     return (
-        <div>
-            <h1>Página Inicial</h1>
-            <nav>
-                <ul>
-                    <li><Link to="/atv01">Atividade 1</Link></li>
-                    <li><Link to="/atv02">Atividade 2</Link></li>
-                    <li><Link to="/atv03">Atividade 3</Link></li>
-                    <li><Link to="/atv04">Atividade 4</Link></li>
-
-
+        <div className={styles.homeContainer}>
+            <h1 className={styles.homeTitle}>Página Inicial</h1>
+            <nav className={styles.homeNav}>
+                <ul className={styles.homeList}>
+                    <li className={styles.homeListItem}>
+                        <Link to="/Atividade1" className={styles.homeLink}>Atividade 1</Link>
+                    </li>
+                    <li className={styles.homeListItem}>
+                        <Link to="/Atividade2" className={styles.homeLink}>Atividade 2</Link>
+                    </li>
+                    <li className={styles.homeListItem}>
+                        <Link to="/Atividade03" className={styles.homeLink}>Atividade 3</Link>
+                    </li>
+                    <li className={styles.homeListItem}>
+                        <Link to="/Atividade04" className={styles.homeLink}>Atividade 4</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
     );
-}
+};
 
 export default Home;
